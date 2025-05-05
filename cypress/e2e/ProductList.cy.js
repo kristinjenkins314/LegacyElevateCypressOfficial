@@ -8,9 +8,9 @@ describe('template spec', () => {
     /* ==== Generated with Cypress Studio ==== */
     cy.visit('test2.arbimed.com');
     
-    cy.get('#UserName').type('kristin.jenkins@elevateht.com');
+    cy.get('#UserName').type('testadmin@elevateht.com');
     cy.get('#Password').clear();
-    cy.get('#Password').type('WeingartGold26!{enter}');
+    cy.get('#Password').type('Test123!{enter}');
     cy.get('#ddlCustomer').select('828');
     cy.get('#ContinueButton').click();
     cy.get('#navInventoryManagement').click();

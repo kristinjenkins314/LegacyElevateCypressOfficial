@@ -10,9 +10,9 @@ describe('template spec', () => {
     /* ==== Generated with Cypress Studio ==== */
     cy.visit('https://test2.arbimed.com/Account/Login.aspx');
     cy.get('#UserName').clear();
-    cy.get('#UserName').type('kristin.jenkins@elevateht.com');
+    cy.get('#UserName').type('testadmin@elevateht.com');
     cy.get('#Password').clear();
-    cy.get('#Password').type('WeingartGold26!');
+    cy.get('#Password').type('Test123!');
     cy.get('#LoginButton').click();
     cy.get('#ddlCustomer').select('828');
     cy.get('#ContinueButton').click();
