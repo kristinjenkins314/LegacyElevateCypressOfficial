@@ -1,8 +1,5 @@
-
-
 module.exports = {
-  projectId: 'tnvzj8',
-  e2e: {experimentalStudio: true,
+  e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
