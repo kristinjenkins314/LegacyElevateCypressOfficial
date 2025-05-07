@@ -9,7 +9,7 @@ describe('template spec', () => {
     cy.visit('https://test2.arbimed.com/Account/Login.aspx');
     cy.get('#UserName').type('testadmin@elevateht.com');
     cy.get('#Password').clear();
-    cy.get('#Password').type('WTest123!');
+    cy.get('#Password').type('Test123!');
     cy.get('#LoginButton > .fas').click();
     cy.get('#ddlCustomer').select('828');
     cy.get('#ContinueButton').click();
