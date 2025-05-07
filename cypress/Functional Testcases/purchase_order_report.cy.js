@@ -1,8 +1,8 @@
 
 describe('Purchase Order Report Verification', () => {
   before(() => {
-    cy.login(); // Custom command for login
-    cy.visit('/procurement');
+    cy.login('testadmin@elevateht.com'); // Custom command for login
+    cy.visit('https://test2.arbimed.com/Reports/PurchaseOrderReport.aspx');
   });
 
   it('Validates Purchase Order Report page', () => {

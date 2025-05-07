@@ -1,8 +1,8 @@
 
 describe('Buy & Bill Tracking Menu Navigation', () => {
   before(() => {
-    cy.login(); // Custom login command
-    cy.visit('/'); // Main dashboard or entry point
+    cy.login('testadmin@elevateht.com'); // Custom login command
+    cy.visit('https://test2.arbimed.com/BuyAndBill/AssignMedication.aspx'); // Main dashboard or entry point
   });
 
   it('Navigates to Buy & Bill Tracking and verifies sub-options', () => {

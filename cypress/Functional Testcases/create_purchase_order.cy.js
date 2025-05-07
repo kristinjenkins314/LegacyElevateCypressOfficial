@@ -1,8 +1,8 @@
 
 describe('Create Purchase Order Flow', () => {
   before(() => {
-    cy.login(); // Assumes a custom Cypress command for authentication
-    cy.visit('/procurement');
+    cy.login('testadmin@elevateht.com'); // Assumes a custom Cypress command for authentication
+    cy.visit('https://test2.arbimed.com/Procurement/NewPurchaseOrder.aspx');
   });
 
   it('Creates a new purchase order', () => {

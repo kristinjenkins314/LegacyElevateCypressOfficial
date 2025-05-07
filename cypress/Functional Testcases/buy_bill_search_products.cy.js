@@ -1,8 +1,8 @@
 
 describe('Search Buy & Bill Products', () => {
   before(() => {
-    cy.login(); // Custom login
-    cy.visit('/');
+    cy.login('testadmin@elevateht.com'); // Custom login
+    cy.visit('https://test2.arbimed.com/Inventory/SearchBuyAndBillBySerialNumber.aspx');
   });
 
   it('Searches for a Buy & Bill product by serial number and verifies product info and transactions', () => {

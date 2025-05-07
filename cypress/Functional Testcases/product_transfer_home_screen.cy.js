@@ -1,8 +1,8 @@
 
 describe('Product Transfer Home Screen', () => {
   before(() => {
-    cy.login(); // Custom command for login
-    cy.visit('/procurement');
+    cy.login('testadmin@elevateht.com'); // Custom command for login
+    cy.visit('https://test2.arbimed.com/Transfer/List.aspx');
   });
 
   it('Validates Product Transfer List and Edit Transfer functionality', () => {

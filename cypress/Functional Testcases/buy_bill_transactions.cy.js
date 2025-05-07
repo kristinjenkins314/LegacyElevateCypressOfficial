@@ -1,8 +1,8 @@
 
 describe('Buy & Bill Transactions Report Verification', () => {
   before(() => {
-    cy.login(); // Custom login command
-    cy.visit('/');
+    cy.login('testadmin@elevateht.com'); // Custom login command
+    cy.visit('https://test2.arbimed.com/History/BuyAndBillTransactions.aspx');
   });
 
   it('Validates Buy & Bill Transactions filters and report columns', () => {

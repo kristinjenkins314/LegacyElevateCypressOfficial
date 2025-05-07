@@ -1,8 +1,8 @@
 
 describe('Verify Purchase Orders Home Screen', () => {
   before(() => {
-    cy.login(); // Custom login command
-    cy.visit('/procurement');
+    cy.login('testadmin@elevateht.com'); // Custom login command
+    cy.visit('https://test2.arbimed.com/Procurement/ListPurchaseOrders.aspx');
   });
 
   it('Validates Purchase Orders screen', () => {

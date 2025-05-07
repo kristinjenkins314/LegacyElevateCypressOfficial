@@ -1,8 +1,8 @@
 
 describe('Create and Send New Product Transfer', () => {
   before(() => {
-    cy.login(); // Assumes custom login command
-    cy.visit('/procurement');
+    cy.login('testadmin@elevateht.com'); // Assumes custom login command
+    cy.visit('https://test2.arbimed.com/Transfer/ProductTransfer.aspx');
   });
 
   it('Creates a new product transfer and verifies it was sent', () => {

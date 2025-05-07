@@ -2,7 +2,7 @@
 describe('Receive Product Transfer at Destination Location', () => {
   before(() => {
     cy.loginAsLocation('destination-location'); // Custom login for receiving location
-    cy.visit('/procurement');
+    cy.visit('https://test2.arbimed.com/Procurement/ReceivePurchaseOrder.aspx');
   });
 
   it('Receives a transferred product and verifies shipment details', () => {

@@ -1,8 +1,8 @@
 
 describe('Receive Purchase Order Flow', () => {
   before(() => {
-    cy.login(); // Custom command for login
-    cy.visit('/procurement');
+    cy.login('testadmin@elevateht.com'); // Custom command for login
+    cy.visit('https://test2.arbimed.com/Procurement/ReceivePurchaseOrder.aspx');
   });
 
   it('Receives a purchase order', () => {

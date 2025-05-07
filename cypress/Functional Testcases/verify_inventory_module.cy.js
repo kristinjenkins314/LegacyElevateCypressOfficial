@@ -1,8 +1,8 @@
 
 describe('Inventory Module Verification', () => {
   before(() => {
-    cy.login();
-    cy.visit('/inventory');
+    cy.login('testadmin@elevateht.com');
+    cy.visit('https://test2.arbimed.com/inventory/inventory-management');
   });
 
   it('Validates inventory filters, search, columns, and edit functionality', () => {

@@ -1,8 +1,8 @@
 
 describe('Retina Successful Bilateral Eye Injection', () => {
   before(() => {
-    cy.login(); // Custom login
-    cy.visit('/pulse');
+    cy.login('testadmin@elevateht.com'); // Custom login
+    cy.visit('https://test2.arbimed.com/Assignment/Assignment.aspx');
   });
 
   it('Dispenses medications for both eyes and verifies billing accuracy', () => {

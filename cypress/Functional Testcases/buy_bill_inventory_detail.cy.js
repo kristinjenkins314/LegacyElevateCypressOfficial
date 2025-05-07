@@ -1,8 +1,8 @@
 
 describe('Buy & Bill Inventory Detail Verification', () => {
   before(() => {
-    cy.login(); // Custom login
-    cy.visit('/');
+    cy.login('testadmin@elevateht.com'); // Custom login
+    cy.visit('https://test2.arbimed.com/BuyAndBill/BuyAndBillInShelves.aspx');
   });
 
   it('Searches inventory and verifies item details in Buy & Bill Inventory Detail', () => {

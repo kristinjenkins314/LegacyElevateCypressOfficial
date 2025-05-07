@@ -1,8 +1,8 @@
 
 describe('Buy & Bill Assignment Workflow', () => {
   before(() => {
-    cy.login(); // Custom login command
-    cy.visit('/');
+    cy.login('testadmin@elevateht.com'); // Custom login command
+    cy.visit('https://test2.arbimed.com/BuyAndBill/AssignMedication.aspx');
   });
 
   it('Performs a Buy & Bill Assignment for a patient', () => {

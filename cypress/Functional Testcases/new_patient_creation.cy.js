@@ -1,7 +1,7 @@
 
 describe('New Patient Creation Flow', () => {
   before(() => {
-    cy.visit('/patients'); // Adjust the URL to the actual patient search screen
+    cy.visit('https://test2.arbimed.com/views/practice/patient/patients.aspx'); // Adjust the URL to the actual patient search screen
   });
 
   it('Should display "New Patient" button and open the form', () => {
